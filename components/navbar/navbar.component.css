@@ -1,0 +1,90 @@
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+  background-color: #13A481;
+  height: 90px;
+  position: fixed;
+  top: 0;
+}
+
+.logo img{
+  margin-top: px;
+  margin-left: 20px;
+  height: 80px;
+  width: auto;
+}
+nav .nav-bar {
+	padding: 30px;
+	display: flex;
+  margin-right: 30px;
+
+}
+nav .nav-bar .nav-bar_item {
+	list-style-type: none;
+	padding: 0px 20px;
+
+}
+nav .nav-bar .dropdown {
+	position: relative;
+}
+nav .nav-bar .dropdown:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 7px;
+	height: 7px;
+	cursor: pointer;
+	transform: rotate(-45deg);
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	transition: 0.2s ease-in-out;
+}
+nav .nav-bar .dropdown:hover:after{
+	transform: rotate(135deg);
+}
+nav .nav-bar .dropdown .project {
+	position: absolute;
+	transform: translateX(-20px) translateY(5px);
+	width: 110px;
+	background-color: rgb(66, 109, 247);
+	padding: 20px;
+	border-radius: 10px;
+	height: 0px;
+	overflow: hidden;
+	visibility: hidden;
+	transition: 0.2s ease-in-out;
+}
+nav .nav-bar .dropdown:hover .project{
+	height: 100px;
+
+	visibility: visible;
+}
+
+nav .nav-bar .dropdown .project .drop-item {
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+nav .nav-bar .nav-bar_item a {
+	position: relative;
+	display: block;
+	padding-bottom: 5px;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+  font-size: 18px;
+}
+nav .nav-bar .nav-bar_item a:after {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	transition: 0.1s ease-in-out;
+}
+nav .nav-bar .nav-bar_item a:hover:after {
+	width: 100%;
+}
